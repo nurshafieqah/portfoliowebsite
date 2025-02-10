@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+	<title>Mazreen Mazriny Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+
+<body>
+
+	<header class="header">
+		<a href="#home" class="logo">Maz<span>ryn</span></a>
+
+		<div id="date-time"></div>
+
+		<script>
+			function updateDateTime() {
+				const now = new Date();
+				const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+				const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+				const dateString = now.toLocaleDateString([], options);
+				document.getElementById('date-time').textContent = `${dateString}, ${timeString}`;
+			}
+		
+			// Update the time every second
+			setInterval(updateDateTime, 1000);
+			updateDateTime(); // Call immediately to show the time without delay
+		</script>
+		
+		<nav class="navbar">
+			<a href="#home" class="active">Home</a>
+			<a href="#about me">About Me</a>
+			<a href="#education">Education</a>
+			<a href="#achievement">Achievement</a>
+			<a href="#gallery">Gallery</a>
+			<a href="#contact">Contact</a>
+		</nav>
+	</header>
+	
+	<section class="home" id="home">
+		<div class="home-content">
+			<h1>Hello! I'm<br><span>Mazreen Mazriny</span></h1>
+
+			<div class="social-icons">
+				<a href="https://www.instagram.com/mmazryn?igsh=amtsOWx0NnY3cWlr"><i class='bx bxl-instagram-alt'></i></a>
+				<a href="https://www.tiktok.com/@yur3ye?_t=8sKG6fYI4ng&_r=1"><i class='bx bxl-tiktok'></i></a>
+				<a href="https://wa.me/+60128229162"><i class='bx bxl-whatsapp'></i></a>
+			</div>
+		</div>
+			<div class="home-img">
+				<img src="images/home2.jpg" alt="">
+			</div>
+	</section>
+
+	<section class="about me" id="about me">
+		<h2 class="heading">ABOUT ME</h2>
+
+		<div class="aboutme-container"></div>
+		<div class="aboutme-img">
+			<img src="images/img21.jpg" alt="">
+			<img src="images/img22.jpg" alt="">
+			<img src="images/img23.jpg" alt="">
+		</div>
+
+		<div class="aboutme-content">
+			<h2>My name is Mazreen Mazriny binti Rabaiyar. I was born in Hospital Tawau, Sabah on 8th December 2004. My races is Suluk. 
+				I have one elder brother, one elder sister, and two youngest brother and I am the middle child which make the total of 5 siblings.
+				I am a results driven professional with a passion for leadership, technology, and continuous grwoth. As a former
+				Majlis Perwakilan Pelajar UiTM Cawangan Sarawak Sesi 2023/2024, I developed exceptional communication, leadership, and teamwork
+				skills, collaborating with both faculty and peers. Through internship at Majlis Perbandaran Tawau, I gained hands-on experience 
+				in data management, record-keeping, and multimedia content creation, where I applied my coding skills to design and developed
+				websites. With proficieny in tools like Adobe Premiere Pro and a strong foundation in problem-sloving, adaptability, and 
+				collaboration, I am always seeking opportunities to leverage my technical and interpersonal skills.</h2>
+		</div>
+	</section>
+
+	<section class="education" id="education">
+		<h2 class="heading">EDUCATION</h2>
+
+		<div class="timeline-items">
+
+			<div class="timeline-item">
+			  <div class="timeline-dot"></div>
+				<div class="timeline-date">2011-2016</div> 
+				<div class="timeline-content">
+					<img src="images/skmrt.jpg">
+					<h3>Primary School</h3>
+					<p>SK Muhibbah Raya, Tawau</p>
+					<p>UPSR: 3A 1B 1C</p>
+					
+				</div>
+			  
+			</div>
+
+			<div class="timeline-item">
+				<div class="timeline-dot"></div>
+				  <div class="timeline-date">2017-2018</div> 
+				  <div class="timeline-content">
+					<img src="images/Smkstpatricklogo.png">
+					<h3>Secondary School</h3>
+					<p>SM St. Patrick, Tawau</p>
+				</div>
+				
+			</div>
+
+			<div class="timeline-item">
+				<div class="timeline-dot"></div>
+				  <div class="timeline-date">2018-2021</div> 
+				  <div class="timeline-content">
+					<img src="images/Sekolah_Menengah_Konven_St._Ursula.png">
+					<h3>Secondary School</h3>
+					  <p>SM Convent St. Ursula, Tawau</p>
+					  <p>SPM: 1A+ 2A 1A- 2B 2B+</p>
+				</div>
+				
+			</div>
+
+			<div class="timeline-item">
+				<div class="timeline-dot"></div>
+				  <div class="timeline-date">2022-2025</div> 
+				  <div class="timeline-content">
+					<img src="images/LogoUiTM.png">
+					<h3>University</h3>
+					  <p>UiTM Kampus Samarahan</p>
+					  <p>Diploma in Information Management</p>
+				</div>
+				
+			</div>
+
+		</div>	
+	</section>
+
+	<section class="achievement" id="achievement">
+		<h2 class="heading">ACHIEVEMENT</h2>
+
+		<div class="achievement-container">
+			<div class="achievement-box">
+				<div class="achievement-info">
+					<h3>SCHOOL</h3>
+					<p>SMK Convent St. Ursula, Tawau</p><br>
+					<ul>
+						<li>Outstanding Student Award: PT3 2019</li>
+						<li>Leadership Excellence Award: 2020</li>
+					</ul>
+
+				</div>
+			</div>
+
+			<div class="achievement-box">
+				<div class="achievement-info">
+					<h3>UNIVERSITY</h3>
+					<p>UiTM Kampus Samarahan</p><br>
+					<ul>
+						<li>PNYDP Majlis Perwakilan Pelajar 23/24</li>
+						<li>Project leader of MPP Care program</li>
+						<li>Project leader of Student Leadership program at SMK Kota Samarahan</li>
+						<li>Donating 100 units of chairs to SMK Kota Samarahan</li>
+						<li>Project leader of Young Leadership program at SK Meranek Kota Samarahan</li>
+						<li>Improving transportation acessibility for students</li>
+						<li>Advocating for and achieving a reduction in parcel delivery costs</li>
+						<li>Enhancing college facilities thorugh collaborative efforts with ministry representatives</li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="gallery" id="gallery">
+			<h2 class="heading">GALLERY</h2>
+
+		<div class="container">
+			<div class="swiper">
+				<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+	  			<!-- Slides -->
+	 		<div class="swiper-slide"><img src="images/gallery2.jpg"></div>
+	 		<div class="swiper-slide"><img src="images/gallery1.jpg"></div>
+			<div class="swiper-slide"><img src="images/gallery 6.jpg"></div>
+			<div class="swiper-slide"><img src="images/gallery 7.jpg"></div>
+			<div class="swiper-slide"><img src="images/gallery 8.jpg"></div>
+			<div class="swiper-slide"><img src="images/gallery 5.jpg"></div>
+			<div class="swiper-slide"><img src="images/gallery 4.jpg"></div>
+			  
+			</div>
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>
+  
+			<!-- If we need navigation buttons -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+  
+  			</div>
+		</div>
+	
+	<div class="video.container">
+		<br><video width="640" height="360" autoplay muted loop>
+			<source src="images/vd1.mp4" type="video/mp4">
+		</video>
+	</div>
+
+	<div class="audio.container">
+		<br><audio width="640" height="360" controls>
+			<source src="anugerah terindah cut.mp3" type="audio/mp3">
+		  </audio>
+	</div>
+	</section>
+
+	<section class="contact" id="contact">
+		<h2 class="heading">Contact <span>Me</span></h2>
+
+		<form action="">
+			<div class="input-group">
+				<div class="input-box">
+					<input type="text"
+					placeholder="Full Name">
+					<input type="email"
+					placeholder="Email">
+				</div>
+				<div class="input-box">
+					<input type="number"
+					placeholder="Phone Number">
+					<input type="text"
+					placeholder="Subject">
+				</div>
+			</div>
+
+			<div class="input-group-2">
+				<textarea name="" id="" cols="30"
+				rows="10" placeholder="Your Message"></textarea>
+				<input type="submit" value="Send Message" class="btn">
+			</div>
+		</form>
+	</section>
+
+	<footer class="footer">
+		<div class="social">
+			<a href="https://www.instagram.com/mmazryn?igsh=amtsOWx0NnY3cWlr"><i class='bx bxl-instagram-alt'></i></a>
+			<a href="https://www.tiktok.com/@yur3ye?_t=8sKG6fYI4ng&_r=1"><i class='bx bxl-tiktok'></i></a>
+			<a href="https://wa.me/+60128229162"><i class='bx bxl-whatsapp'></i></a>
+		</div>
+
+		</ul>
+		<p class="copyright">
+			© Mazreen Mazriny | All Rights Reserved<br><br><br>
+			disclaimer: This website is created to fulfill IMD318 individual assignment purposes.
+			
+		</p>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script>
+		const swiper = new Swiper('.swiper', {
+				autoplay: {
+					delay: 3000,
+					disableOnInteraction: false,
+				},
+  			loop: true,
+
+  			pagination: {
+    		el: '.swiper-pagination',
+			clickable: true,
+  			},
+
+  			navigation: {
+   			nextEl: '.swiper-button-next',
+    		prevEl: '.swiper-button-prev',
+  			},
+
+		});
+		
+	</script>
+
+	<script src="javascript.js"></script>
+</body>
+</html>
